@@ -1,0 +1,406 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.quizapp"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+9        android:targetSdkVersion="34" />
+10
+11    <!-- Required Permissions -->
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->C:\Users\HARSHITA\AndroidStudioProjects\quizapp\app\src\main\AndroidManifest.xml:6:5-66
+12-->C:\Users\HARSHITA\AndroidStudioProjects\quizapp\app\src\main\AndroidManifest.xml:6:22-64
+13    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+13-->C:\Users\HARSHITA\AndroidStudioProjects\quizapp\app\src\main\AndroidManifest.xml:7:5-70
+13-->C:\Users\HARSHITA\AndroidStudioProjects\quizapp\app\src\main\AndroidManifest.xml:7:22-68
+14    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+14-->C:\Users\HARSHITA\AndroidStudioProjects\quizapp\app\src\main\AndroidManifest.xml:8:5-79
+14-->C:\Users\HARSHITA\AndroidStudioProjects\quizapp\app\src\main\AndroidManifest.xml:8:22-76
+15    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+15-->[com.google.android.recaptcha:recaptcha:18.5.1] C:\Users\HARSHITA\.gradle\caches\transforms-4\8edfaec45dbaf1eba46d4c186e6345f3\transformed\recaptcha-18.5.1\AndroidManifest.xml:9:5-98
+15-->[com.google.android.recaptcha:recaptcha:18.5.1] C:\Users\HARSHITA\.gradle\caches\transforms-4\8edfaec45dbaf1eba46d4c186e6345f3\transformed\recaptcha-18.5.1\AndroidManifest.xml:9:22-95
+16
+17    <permission
+17-->[androidx.core:core:1.13.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\8d0f03ebaffdbcef9c2c1e1d78f033b8\transformed\core-1.13.0\AndroidManifest.xml:22:5-24:47
+18        android:name="com.example.quizapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+18-->[androidx.core:core:1.13.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\8d0f03ebaffdbcef9c2c1e1d78f033b8\transformed\core-1.13.0\AndroidManifest.xml:23:9-81
+19        android:protectionLevel="signature" />
+19-->[androidx.core:core:1.13.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\8d0f03ebaffdbcef9c2c1e1d78f033b8\transformed\core-1.13.0\AndroidManifest.xml:24:9-44
+20
+21    <uses-permission android:name="com.example.quizapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+21-->[androidx.core:core:1.13.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\8d0f03ebaffdbcef9c2c1e1d78f033b8\transformed\core-1.13.0\AndroidManifest.xml:26:5-97
+21-->[androidx.core:core:1.13.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\8d0f03ebaffdbcef9c2c1e1d78f033b8\transformed\core-1.13.0\AndroidManifest.xml:26:22-94
+22
+23    <application
+23-->C:\Users\HARSHITA\AndroidStudioProjects\quizapp\app\src\main\AndroidManifest.xml:10:5-42:19
+24        android:allowBackup="true"
+24-->C:\Users\HARSHITA\AndroidStudioProjects\quizapp\app\src\main\AndroidManifest.xml:11:9-35
+25        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+25-->[androidx.core:core:1.13.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\8d0f03ebaffdbcef9c2c1e1d78f033b8\transformed\core-1.13.0\AndroidManifest.xml:28:18-86
+26        android:debuggable="true"
+27        android:extractNativeLibs="false"
+28        android:icon="@mipmap/ic_launcher"
+28-->C:\Users\HARSHITA\AndroidStudioProjects\quizapp\app\src\main\AndroidManifest.xml:12:9-43
+29        android:label="@string/app_name"
+29-->C:\Users\HARSHITA\AndroidStudioProjects\quizapp\app\src\main\AndroidManifest.xml:13:9-41
+30        android:roundIcon="@mipmap/ic_launcher_round"
+30-->C:\Users\HARSHITA\AndroidStudioProjects\quizapp\app\src\main\AndroidManifest.xml:14:9-54
+31        android:supportsRtl="true"
+31-->C:\Users\HARSHITA\AndroidStudioProjects\quizapp\app\src\main\AndroidManifest.xml:15:9-35
+32        android:testOnly="true"
+33        android:theme="@style/Theme.AppCompat.Light" >
+33-->C:\Users\HARSHITA\AndroidStudioProjects\quizapp\app\src\main\AndroidManifest.xml:16:9-53
+34
+35        <!-- Firebase initialization metadata -->
+36        <meta-data
+36-->C:\Users\HARSHITA\AndroidStudioProjects\quizapp\app\src\main\AndroidManifest.xml:19:9-21:54
+37            android:name="com.google.firebase.messaging.default_notification_icon"
+37-->C:\Users\HARSHITA\AndroidStudioProjects\quizapp\app\src\main\AndroidManifest.xml:20:13-83
+38            android:resource="@mipmap/ic_launcher" />
+38-->C:\Users\HARSHITA\AndroidStudioProjects\quizapp\app\src\main\AndroidManifest.xml:21:13-51
+39
+40        <!-- WelcomeActivity (entry point of the app) -->
+41        <activity
+41-->C:\Users\HARSHITA\AndroidStudioProjects\quizapp\app\src\main\AndroidManifest.xml:24:9-31:20
+42            android:name="com.example.quizapp.WelcomeActivity"
+42-->C:\Users\HARSHITA\AndroidStudioProjects\quizapp\app\src\main\AndroidManifest.xml:25:13-44
+43            android:exported="true" >
+43-->C:\Users\HARSHITA\AndroidStudioProjects\quizapp\app\src\main\AndroidManifest.xml:26:13-36
+44            <intent-filter>
+44-->C:\Users\HARSHITA\AndroidStudioProjects\quizapp\app\src\main\AndroidManifest.xml:27:13-30:29
+45                <action android:name="android.intent.action.MAIN" />
+45-->C:\Users\HARSHITA\AndroidStudioProjects\quizapp\app\src\main\AndroidManifest.xml:28:17-69
+45-->C:\Users\HARSHITA\AndroidStudioProjects\quizapp\app\src\main\AndroidManifest.xml:28:25-66
+46
+47                <category android:name="android.intent.category.LAUNCHER" />
+47-->C:\Users\HARSHITA\AndroidStudioProjects\quizapp\app\src\main\AndroidManifest.xml:29:17-77
+47-->C:\Users\HARSHITA\AndroidStudioProjects\quizapp\app\src\main\AndroidManifest.xml:29:27-74
+48            </intent-filter>
+49        </activity>
+50
+51        <!-- MainActivity (Quiz activity) -->
+52        <activity
+52-->C:\Users\HARSHITA\AndroidStudioProjects\quizapp\app\src\main\AndroidManifest.xml:34:9-36:39
+53            android:name="com.example.quizapp.MainActivity"
+53-->C:\Users\HARSHITA\AndroidStudioProjects\quizapp\app\src\main\AndroidManifest.xml:35:13-41
+54            android:exported="true" />
+54-->C:\Users\HARSHITA\AndroidStudioProjects\quizapp\app\src\main\AndroidManifest.xml:36:13-36
+55
+56        <!-- ThankYouActivity (Thank You page after quiz) -->
+57        <activity
+57-->C:\Users\HARSHITA\AndroidStudioProjects\quizapp\app\src\main\AndroidManifest.xml:39:9-41:39
+58            android:name="com.example.quizapp.ThankYouActivity"
+58-->C:\Users\HARSHITA\AndroidStudioProjects\quizapp\app\src\main\AndroidManifest.xml:40:13-45
+59            android:exported="true" />
+59-->C:\Users\HARSHITA\AndroidStudioProjects\quizapp\app\src\main\AndroidManifest.xml:41:13-36
+60        <activity
+60-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\1295919e7a9367be88821408ae6536eb\transformed\firebase-auth-23.1.0\AndroidManifest.xml:29:9-46:20
+61            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+61-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\1295919e7a9367be88821408ae6536eb\transformed\firebase-auth-23.1.0\AndroidManifest.xml:30:13-80
+62            android:excludeFromRecents="true"
+62-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\1295919e7a9367be88821408ae6536eb\transformed\firebase-auth-23.1.0\AndroidManifest.xml:31:13-46
+63            android:exported="true"
+63-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\1295919e7a9367be88821408ae6536eb\transformed\firebase-auth-23.1.0\AndroidManifest.xml:32:13-36
+64            android:launchMode="singleTask"
+64-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\1295919e7a9367be88821408ae6536eb\transformed\firebase-auth-23.1.0\AndroidManifest.xml:33:13-44
+65            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+65-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\1295919e7a9367be88821408ae6536eb\transformed\firebase-auth-23.1.0\AndroidManifest.xml:34:13-72
+66            <intent-filter>
+66-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\1295919e7a9367be88821408ae6536eb\transformed\firebase-auth-23.1.0\AndroidManifest.xml:35:13-45:29
+67                <action android:name="android.intent.action.VIEW" />
+67-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\1295919e7a9367be88821408ae6536eb\transformed\firebase-auth-23.1.0\AndroidManifest.xml:36:17-69
+67-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\1295919e7a9367be88821408ae6536eb\transformed\firebase-auth-23.1.0\AndroidManifest.xml:36:25-66
+68
+69                <category android:name="android.intent.category.DEFAULT" />
+69-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\1295919e7a9367be88821408ae6536eb\transformed\firebase-auth-23.1.0\AndroidManifest.xml:38:17-76
+69-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\1295919e7a9367be88821408ae6536eb\transformed\firebase-auth-23.1.0\AndroidManifest.xml:38:27-73
+70                <category android:name="android.intent.category.BROWSABLE" />
+70-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\1295919e7a9367be88821408ae6536eb\transformed\firebase-auth-23.1.0\AndroidManifest.xml:39:17-78
+70-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\1295919e7a9367be88821408ae6536eb\transformed\firebase-auth-23.1.0\AndroidManifest.xml:39:27-75
+71
+72                <data
+72-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\1295919e7a9367be88821408ae6536eb\transformed\firebase-auth-23.1.0\AndroidManifest.xml:41:17-44:51
+73                    android:host="firebase.auth"
+73-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\1295919e7a9367be88821408ae6536eb\transformed\firebase-auth-23.1.0\AndroidManifest.xml:42:21-49
+74                    android:path="/"
+74-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\1295919e7a9367be88821408ae6536eb\transformed\firebase-auth-23.1.0\AndroidManifest.xml:43:21-37
+75                    android:scheme="genericidp" />
+75-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\1295919e7a9367be88821408ae6536eb\transformed\firebase-auth-23.1.0\AndroidManifest.xml:44:21-48
+76            </intent-filter>
+77        </activity>
+78        <activity
+78-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\1295919e7a9367be88821408ae6536eb\transformed\firebase-auth-23.1.0\AndroidManifest.xml:47:9-64:20
+79            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+79-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\1295919e7a9367be88821408ae6536eb\transformed\firebase-auth-23.1.0\AndroidManifest.xml:48:13-79
+80            android:excludeFromRecents="true"
+80-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\1295919e7a9367be88821408ae6536eb\transformed\firebase-auth-23.1.0\AndroidManifest.xml:49:13-46
+81            android:exported="true"
+81-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\1295919e7a9367be88821408ae6536eb\transformed\firebase-auth-23.1.0\AndroidManifest.xml:50:13-36
+82            android:launchMode="singleTask"
+82-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\1295919e7a9367be88821408ae6536eb\transformed\firebase-auth-23.1.0\AndroidManifest.xml:51:13-44
+83            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+83-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\1295919e7a9367be88821408ae6536eb\transformed\firebase-auth-23.1.0\AndroidManifest.xml:52:13-72
+84            <intent-filter>
+84-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\1295919e7a9367be88821408ae6536eb\transformed\firebase-auth-23.1.0\AndroidManifest.xml:53:13-63:29
+85                <action android:name="android.intent.action.VIEW" />
+85-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\1295919e7a9367be88821408ae6536eb\transformed\firebase-auth-23.1.0\AndroidManifest.xml:36:17-69
+85-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\1295919e7a9367be88821408ae6536eb\transformed\firebase-auth-23.1.0\AndroidManifest.xml:36:25-66
+86
+87                <category android:name="android.intent.category.DEFAULT" />
+87-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\1295919e7a9367be88821408ae6536eb\transformed\firebase-auth-23.1.0\AndroidManifest.xml:38:17-76
+87-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\1295919e7a9367be88821408ae6536eb\transformed\firebase-auth-23.1.0\AndroidManifest.xml:38:27-73
+88                <category android:name="android.intent.category.BROWSABLE" />
+88-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\1295919e7a9367be88821408ae6536eb\transformed\firebase-auth-23.1.0\AndroidManifest.xml:39:17-78
+88-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\1295919e7a9367be88821408ae6536eb\transformed\firebase-auth-23.1.0\AndroidManifest.xml:39:27-75
+89
+90                <data
+90-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\1295919e7a9367be88821408ae6536eb\transformed\firebase-auth-23.1.0\AndroidManifest.xml:41:17-44:51
+91                    android:host="firebase.auth"
+91-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\1295919e7a9367be88821408ae6536eb\transformed\firebase-auth-23.1.0\AndroidManifest.xml:42:21-49
+92                    android:path="/"
+92-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\1295919e7a9367be88821408ae6536eb\transformed\firebase-auth-23.1.0\AndroidManifest.xml:43:21-37
+93                    android:scheme="recaptcha" />
+93-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\1295919e7a9367be88821408ae6536eb\transformed\firebase-auth-23.1.0\AndroidManifest.xml:44:21-48
+94            </intent-filter>
+95        </activity>
+96
+97        <service
+97-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\1295919e7a9367be88821408ae6536eb\transformed\firebase-auth-23.1.0\AndroidManifest.xml:66:9-72:19
+98            android:name="com.google.firebase.components.ComponentDiscoveryService"
+98-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\1295919e7a9367be88821408ae6536eb\transformed\firebase-auth-23.1.0\AndroidManifest.xml:67:13-84
+99            android:directBootAware="true"
+99-->[com.google.firebase:firebase-common:21.0.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\0041d4b9e4a607d2fb6669a90ac2823a\transformed\firebase-common-21.0.0\AndroidManifest.xml:32:13-43
+100            android:exported="false" >
+100-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\1295919e7a9367be88821408ae6536eb\transformed\firebase-auth-23.1.0\AndroidManifest.xml:68:13-37
+101            <meta-data
+101-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\1295919e7a9367be88821408ae6536eb\transformed\firebase-auth-23.1.0\AndroidManifest.xml:69:13-71:85
+102                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+102-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\1295919e7a9367be88821408ae6536eb\transformed\firebase-auth-23.1.0\AndroidManifest.xml:70:17-109
+103                android:value="com.google.firebase.components.ComponentRegistrar" />
+103-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\1295919e7a9367be88821408ae6536eb\transformed\firebase-auth-23.1.0\AndroidManifest.xml:71:17-82
+104            <meta-data
+104-->[com.google.firebase:firebase-firestore:25.1.1] C:\Users\HARSHITA\.gradle\caches\transforms-4\ab77311acae86374449264e828fa9c36\transformed\firebase-firestore-25.1.1\AndroidManifest.xml:17:13-19:85
+105                android:name="com.google.firebase.components:com.google.firebase.firestore.FirebaseFirestoreKtxRegistrar"
+105-->[com.google.firebase:firebase-firestore:25.1.1] C:\Users\HARSHITA\.gradle\caches\transforms-4\ab77311acae86374449264e828fa9c36\transformed\firebase-firestore-25.1.1\AndroidManifest.xml:18:17-122
+106                android:value="com.google.firebase.components.ComponentRegistrar" />
+106-->[com.google.firebase:firebase-firestore:25.1.1] C:\Users\HARSHITA\.gradle\caches\transforms-4\ab77311acae86374449264e828fa9c36\transformed\firebase-firestore-25.1.1\AndroidManifest.xml:19:17-82
+107            <meta-data
+107-->[com.google.firebase:firebase-firestore:25.1.1] C:\Users\HARSHITA\.gradle\caches\transforms-4\ab77311acae86374449264e828fa9c36\transformed\firebase-firestore-25.1.1\AndroidManifest.xml:20:13-22:85
+108                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+108-->[com.google.firebase:firebase-firestore:25.1.1] C:\Users\HARSHITA\.gradle\caches\transforms-4\ab77311acae86374449264e828fa9c36\transformed\firebase-firestore-25.1.1\AndroidManifest.xml:21:17-111
+109                android:value="com.google.firebase.components.ComponentRegistrar" />
+109-->[com.google.firebase:firebase-firestore:25.1.1] C:\Users\HARSHITA\.gradle\caches\transforms-4\ab77311acae86374449264e828fa9c36\transformed\firebase-firestore-25.1.1\AndroidManifest.xml:22:17-82
+110            <meta-data
+110-->[com.google.firebase:firebase-database:21.0.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\80caa9b6e76f2d312762676d810366d6\transformed\firebase-database-21.0.0\AndroidManifest.xml:29:13-31:85
+111                android:name="com.google.firebase.components:com.google.firebase.database.FirebaseDatabaseKtxRegistrar"
+111-->[com.google.firebase:firebase-database:21.0.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\80caa9b6e76f2d312762676d810366d6\transformed\firebase-database-21.0.0\AndroidManifest.xml:30:17-120
+112                android:value="com.google.firebase.components.ComponentRegistrar" />
+112-->[com.google.firebase:firebase-database:21.0.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\80caa9b6e76f2d312762676d810366d6\transformed\firebase-database-21.0.0\AndroidManifest.xml:31:17-82
+113            <meta-data
+113-->[com.google.firebase:firebase-database:21.0.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\80caa9b6e76f2d312762676d810366d6\transformed\firebase-database-21.0.0\AndroidManifest.xml:32:13-34:85
+114                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+114-->[com.google.firebase:firebase-database:21.0.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\80caa9b6e76f2d312762676d810366d6\transformed\firebase-database-21.0.0\AndroidManifest.xml:33:17-109
+115                android:value="com.google.firebase.components.ComponentRegistrar" />
+115-->[com.google.firebase:firebase-database:21.0.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\80caa9b6e76f2d312762676d810366d6\transformed\firebase-database-21.0.0\AndroidManifest.xml:34:17-82
+116            <meta-data
+116-->[com.google.firebase:firebase-storage:21.0.1] C:\Users\HARSHITA\.gradle\caches\transforms-4\11d11ed50121528f0033c1d212a11e2d\transformed\firebase-storage-21.0.1\AndroidManifest.xml:30:13-32:85
+117                android:name="com.google.firebase.components:com.google.firebase.storage.FirebaseStorageKtxRegistrar"
+117-->[com.google.firebase:firebase-storage:21.0.1] C:\Users\HARSHITA\.gradle\caches\transforms-4\11d11ed50121528f0033c1d212a11e2d\transformed\firebase-storage-21.0.1\AndroidManifest.xml:31:17-118
+118                android:value="com.google.firebase.components.ComponentRegistrar" />
+118-->[com.google.firebase:firebase-storage:21.0.1] C:\Users\HARSHITA\.gradle\caches\transforms-4\11d11ed50121528f0033c1d212a11e2d\transformed\firebase-storage-21.0.1\AndroidManifest.xml:32:17-82
+119            <meta-data
+119-->[com.google.firebase:firebase-storage:21.0.1] C:\Users\HARSHITA\.gradle\caches\transforms-4\11d11ed50121528f0033c1d212a11e2d\transformed\firebase-storage-21.0.1\AndroidManifest.xml:33:13-35:85
+120                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+120-->[com.google.firebase:firebase-storage:21.0.1] C:\Users\HARSHITA\.gradle\caches\transforms-4\11d11ed50121528f0033c1d212a11e2d\transformed\firebase-storage-21.0.1\AndroidManifest.xml:34:17-107
+121                android:value="com.google.firebase.components.ComponentRegistrar" />
+121-->[com.google.firebase:firebase-storage:21.0.1] C:\Users\HARSHITA\.gradle\caches\transforms-4\11d11ed50121528f0033c1d212a11e2d\transformed\firebase-storage-21.0.1\AndroidManifest.xml:35:17-82
+122            <meta-data
+122-->[com.google.firebase:firebase-appcheck:18.0.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\246826245fb903987bff46fb0e707351\transformed\firebase-appcheck-18.0.0\AndroidManifest.xml:25:13-27:85
+123                android:name="com.google.firebase.components:com.google.firebase.appcheck.FirebaseAppCheckKtxRegistrar"
+123-->[com.google.firebase:firebase-appcheck:18.0.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\246826245fb903987bff46fb0e707351\transformed\firebase-appcheck-18.0.0\AndroidManifest.xml:26:17-120
+124                android:value="com.google.firebase.components.ComponentRegistrar" />
+124-->[com.google.firebase:firebase-appcheck:18.0.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\246826245fb903987bff46fb0e707351\transformed\firebase-appcheck-18.0.0\AndroidManifest.xml:27:17-82
+125            <meta-data
+125-->[com.google.firebase:firebase-appcheck:18.0.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\246826245fb903987bff46fb0e707351\transformed\firebase-appcheck-18.0.0\AndroidManifest.xml:28:13-30:85
+126                android:name="com.google.firebase.components:com.google.firebase.appcheck.FirebaseAppCheckRegistrar"
+126-->[com.google.firebase:firebase-appcheck:18.0.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\246826245fb903987bff46fb0e707351\transformed\firebase-appcheck-18.0.0\AndroidManifest.xml:29:17-117
+127                android:value="com.google.firebase.components.ComponentRegistrar" />
+127-->[com.google.firebase:firebase-appcheck:18.0.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\246826245fb903987bff46fb0e707351\transformed\firebase-appcheck-18.0.0\AndroidManifest.xml:30:17-82
+128            <meta-data
+128-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\93cc644f3fd0615092b16bbfddbf7865\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:12:13-14:85
+129                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+129-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\93cc644f3fd0615092b16bbfddbf7865\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:13:17-116
+130                android:value="com.google.firebase.components.ComponentRegistrar" />
+130-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\93cc644f3fd0615092b16bbfddbf7865\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:14:17-82
+131            <meta-data
+131-->[com.google.firebase:firebase-common:21.0.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\0041d4b9e4a607d2fb6669a90ac2823a\transformed\firebase-common-21.0.0\AndroidManifest.xml:35:13-37:85
+132                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+132-->[com.google.firebase:firebase-common:21.0.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\0041d4b9e4a607d2fb6669a90ac2823a\transformed\firebase-common-21.0.0\AndroidManifest.xml:36:17-109
+133                android:value="com.google.firebase.components.ComponentRegistrar" />
+133-->[com.google.firebase:firebase-common:21.0.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\0041d4b9e4a607d2fb6669a90ac2823a\transformed\firebase-common-21.0.0\AndroidManifest.xml:37:17-82
+134        </service>
+135        <service
+135-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\HARSHITA\.gradle\caches\transforms-4\8f45eaf294a1170dcfdbbf5ecaa33d58\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:24:9-32:19
+136            android:name="androidx.credentials.playservices.CredentialProviderMetadataHolder"
+136-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\HARSHITA\.gradle\caches\transforms-4\8f45eaf294a1170dcfdbbf5ecaa33d58\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:25:13-94
+137            android:enabled="true"
+137-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\HARSHITA\.gradle\caches\transforms-4\8f45eaf294a1170dcfdbbf5ecaa33d58\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:26:13-35
+138            android:exported="false" >
+138-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\HARSHITA\.gradle\caches\transforms-4\8f45eaf294a1170dcfdbbf5ecaa33d58\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:27:13-37
+139            <meta-data
+139-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\HARSHITA\.gradle\caches\transforms-4\8f45eaf294a1170dcfdbbf5ecaa33d58\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:29:13-31:104
+140                android:name="androidx.credentials.CREDENTIAL_PROVIDER_KEY"
+140-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\HARSHITA\.gradle\caches\transforms-4\8f45eaf294a1170dcfdbbf5ecaa33d58\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:30:17-76
+141                android:value="androidx.credentials.playservices.CredentialProviderPlayServicesImpl" />
+141-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\HARSHITA\.gradle\caches\transforms-4\8f45eaf294a1170dcfdbbf5ecaa33d58\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:31:17-101
+142        </service>
+143
+144        <activity
+144-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\HARSHITA\.gradle\caches\transforms-4\8f45eaf294a1170dcfdbbf5ecaa33d58\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:34:9-41:20
+145            android:name="androidx.credentials.playservices.HiddenActivity"
+145-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\HARSHITA\.gradle\caches\transforms-4\8f45eaf294a1170dcfdbbf5ecaa33d58\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:35:13-76
+146            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+146-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\HARSHITA\.gradle\caches\transforms-4\8f45eaf294a1170dcfdbbf5ecaa33d58\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:36:13-87
+147            android:enabled="true"
+147-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\HARSHITA\.gradle\caches\transforms-4\8f45eaf294a1170dcfdbbf5ecaa33d58\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:37:13-35
+148            android:exported="false"
+148-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\HARSHITA\.gradle\caches\transforms-4\8f45eaf294a1170dcfdbbf5ecaa33d58\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:38:13-37
+149            android:fitsSystemWindows="true"
+149-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\HARSHITA\.gradle\caches\transforms-4\8f45eaf294a1170dcfdbbf5ecaa33d58\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:39:13-45
+150            android:theme="@style/Theme.Hidden" >
+150-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\HARSHITA\.gradle\caches\transforms-4\8f45eaf294a1170dcfdbbf5ecaa33d58\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:40:13-48
+151        </activity>
+152        <activity
+152-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\3c3bc510ceeaa403d1f5a4d20272855e\transformed\play-services-auth-20.7.0\AndroidManifest.xml:23:9-27:75
+153            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+153-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\3c3bc510ceeaa403d1f5a4d20272855e\transformed\play-services-auth-20.7.0\AndroidManifest.xml:24:13-93
+154            android:excludeFromRecents="true"
+154-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\3c3bc510ceeaa403d1f5a4d20272855e\transformed\play-services-auth-20.7.0\AndroidManifest.xml:25:13-46
+155            android:exported="false"
+155-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\3c3bc510ceeaa403d1f5a4d20272855e\transformed\play-services-auth-20.7.0\AndroidManifest.xml:26:13-37
+156            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+156-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\3c3bc510ceeaa403d1f5a4d20272855e\transformed\play-services-auth-20.7.0\AndroidManifest.xml:27:13-72
+157        <!--
+158            Service handling Google Sign-In user revocation. For apps that do not integrate with
+159            Google Sign-In, this service will never be started.
+160        -->
+161        <service
+161-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\3c3bc510ceeaa403d1f5a4d20272855e\transformed\play-services-auth-20.7.0\AndroidManifest.xml:33:9-37:51
+162            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+162-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\3c3bc510ceeaa403d1f5a4d20272855e\transformed\play-services-auth-20.7.0\AndroidManifest.xml:34:13-89
+163            android:exported="true"
+163-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\3c3bc510ceeaa403d1f5a4d20272855e\transformed\play-services-auth-20.7.0\AndroidManifest.xml:35:13-36
+164            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+164-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\3c3bc510ceeaa403d1f5a4d20272855e\transformed\play-services-auth-20.7.0\AndroidManifest.xml:36:13-107
+165            android:visibleToInstantApps="true" />
+165-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\3c3bc510ceeaa403d1f5a4d20272855e\transformed\play-services-auth-20.7.0\AndroidManifest.xml:37:13-48
+166
+167        <provider
+167-->[com.google.firebase:firebase-common:21.0.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\0041d4b9e4a607d2fb6669a90ac2823a\transformed\firebase-common-21.0.0\AndroidManifest.xml:23:9-28:39
+168            android:name="com.google.firebase.provider.FirebaseInitProvider"
+168-->[com.google.firebase:firebase-common:21.0.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\0041d4b9e4a607d2fb6669a90ac2823a\transformed\firebase-common-21.0.0\AndroidManifest.xml:24:13-77
+169            android:authorities="com.example.quizapp.firebaseinitprovider"
+169-->[com.google.firebase:firebase-common:21.0.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\0041d4b9e4a607d2fb6669a90ac2823a\transformed\firebase-common-21.0.0\AndroidManifest.xml:25:13-72
+170            android:directBootAware="true"
+170-->[com.google.firebase:firebase-common:21.0.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\0041d4b9e4a607d2fb6669a90ac2823a\transformed\firebase-common-21.0.0\AndroidManifest.xml:26:13-43
+171            android:exported="false"
+171-->[com.google.firebase:firebase-common:21.0.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\0041d4b9e4a607d2fb6669a90ac2823a\transformed\firebase-common-21.0.0\AndroidManifest.xml:27:13-37
+172            android:initOrder="100" />
+172-->[com.google.firebase:firebase-common:21.0.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\0041d4b9e4a607d2fb6669a90ac2823a\transformed\firebase-common-21.0.0\AndroidManifest.xml:28:13-36
+173
+174        <activity
+174-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\7876af643c2f9e24cfc4cae268ce3408\transformed\play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
+175            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+175-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\7876af643c2f9e24cfc4cae268ce3408\transformed\play-services-base-18.1.0\AndroidManifest.xml:20:19-85
+176            android:exported="false"
+176-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\7876af643c2f9e24cfc4cae268ce3408\transformed\play-services-base-18.1.0\AndroidManifest.xml:22:19-43
+177            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+177-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\7876af643c2f9e24cfc4cae268ce3408\transformed\play-services-base-18.1.0\AndroidManifest.xml:21:19-78
+178
+179        <provider
+179-->[androidx.emoji2:emoji2:1.3.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\5b4f14a90cb5b24c3b582af3e9f0eec2\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+180            android:name="androidx.startup.InitializationProvider"
+180-->[androidx.emoji2:emoji2:1.3.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\5b4f14a90cb5b24c3b582af3e9f0eec2\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+181            android:authorities="com.example.quizapp.androidx-startup"
+181-->[androidx.emoji2:emoji2:1.3.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\5b4f14a90cb5b24c3b582af3e9f0eec2\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+182            android:exported="false" >
+182-->[androidx.emoji2:emoji2:1.3.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\5b4f14a90cb5b24c3b582af3e9f0eec2\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
+183            <meta-data
+183-->[androidx.emoji2:emoji2:1.3.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\5b4f14a90cb5b24c3b582af3e9f0eec2\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+184                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+184-->[androidx.emoji2:emoji2:1.3.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\5b4f14a90cb5b24c3b582af3e9f0eec2\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+185                android:value="androidx.startup" />
+185-->[androidx.emoji2:emoji2:1.3.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\5b4f14a90cb5b24c3b582af3e9f0eec2\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+186            <meta-data
+186-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\HARSHITA\.gradle\caches\transforms-4\41f60adf58253b1bdef58d813d547b5b\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
+187                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+187-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\HARSHITA\.gradle\caches\transforms-4\41f60adf58253b1bdef58d813d547b5b\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
+188                android:value="androidx.startup" />
+188-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\HARSHITA\.gradle\caches\transforms-4\41f60adf58253b1bdef58d813d547b5b\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
+189            <meta-data
+189-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\HARSHITA\.gradle\caches\transforms-4\ef32cc5f0de4694278da720baeef582a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+190                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+190-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\HARSHITA\.gradle\caches\transforms-4\ef32cc5f0de4694278da720baeef582a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+191                android:value="androidx.startup" />
+191-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\HARSHITA\.gradle\caches\transforms-4\ef32cc5f0de4694278da720baeef582a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+192        </provider>
+193
+194        <meta-data
+194-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\a33f83c2739fbe9fdf4a38e975a24d15\transformed\play-services-basement-18.4.0\AndroidManifest.xml:6:9-122
+195            android:name="com.google.android.gms.version"
+195-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\a33f83c2739fbe9fdf4a38e975a24d15\transformed\play-services-basement-18.4.0\AndroidManifest.xml:6:20-65
+196            android:value="@integer/google_play_services_version" />
+196-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\HARSHITA\.gradle\caches\transforms-4\a33f83c2739fbe9fdf4a38e975a24d15\transformed\play-services-basement-18.4.0\AndroidManifest.xml:6:66-119
+197
+198        <receiver
+198-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\HARSHITA\.gradle\caches\transforms-4\ef32cc5f0de4694278da720baeef582a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+199            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+199-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\HARSHITA\.gradle\caches\transforms-4\ef32cc5f0de4694278da720baeef582a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+200            android:directBootAware="false"
+200-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\HARSHITA\.gradle\caches\transforms-4\ef32cc5f0de4694278da720baeef582a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+201            android:enabled="true"
+201-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\HARSHITA\.gradle\caches\transforms-4\ef32cc5f0de4694278da720baeef582a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+202            android:exported="true"
+202-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\HARSHITA\.gradle\caches\transforms-4\ef32cc5f0de4694278da720baeef582a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+203            android:permission="android.permission.DUMP" >
+203-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\HARSHITA\.gradle\caches\transforms-4\ef32cc5f0de4694278da720baeef582a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+204            <intent-filter>
+204-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\HARSHITA\.gradle\caches\transforms-4\ef32cc5f0de4694278da720baeef582a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+205                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+205-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\HARSHITA\.gradle\caches\transforms-4\ef32cc5f0de4694278da720baeef582a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+205-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\HARSHITA\.gradle\caches\transforms-4\ef32cc5f0de4694278da720baeef582a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+206            </intent-filter>
+207            <intent-filter>
+207-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\HARSHITA\.gradle\caches\transforms-4\ef32cc5f0de4694278da720baeef582a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+208                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+208-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\HARSHITA\.gradle\caches\transforms-4\ef32cc5f0de4694278da720baeef582a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+208-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\HARSHITA\.gradle\caches\transforms-4\ef32cc5f0de4694278da720baeef582a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+209            </intent-filter>
+210            <intent-filter>
+210-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\HARSHITA\.gradle\caches\transforms-4\ef32cc5f0de4694278da720baeef582a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+211                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+211-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\HARSHITA\.gradle\caches\transforms-4\ef32cc5f0de4694278da720baeef582a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+211-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\HARSHITA\.gradle\caches\transforms-4\ef32cc5f0de4694278da720baeef582a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+212            </intent-filter>
+213            <intent-filter>
+213-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\HARSHITA\.gradle\caches\transforms-4\ef32cc5f0de4694278da720baeef582a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+214                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+214-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\HARSHITA\.gradle\caches\transforms-4\ef32cc5f0de4694278da720baeef582a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+214-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\HARSHITA\.gradle\caches\transforms-4\ef32cc5f0de4694278da720baeef582a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+215            </intent-filter>
+216        </receiver> <!-- The activities will be merged into the manifest of the hosting app. -->
+217        <activity
+217-->[com.google.android.play:core-common:2.0.3] C:\Users\HARSHITA\.gradle\caches\transforms-4\147fd72ac180da34d50d4e48a1f9cfb7\transformed\core-common-2.0.3\AndroidManifest.xml:14:9-18:65
+218            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
+218-->[com.google.android.play:core-common:2.0.3] C:\Users\HARSHITA\.gradle\caches\transforms-4\147fd72ac180da34d50d4e48a1f9cfb7\transformed\core-common-2.0.3\AndroidManifest.xml:15:13-93
+219            android:exported="false"
+219-->[com.google.android.play:core-common:2.0.3] C:\Users\HARSHITA\.gradle\caches\transforms-4\147fd72ac180da34d50d4e48a1f9cfb7\transformed\core-common-2.0.3\AndroidManifest.xml:16:13-37
+220            android:stateNotNeeded="true"
+220-->[com.google.android.play:core-common:2.0.3] C:\Users\HARSHITA\.gradle\caches\transforms-4\147fd72ac180da34d50d4e48a1f9cfb7\transformed\core-common-2.0.3\AndroidManifest.xml:17:13-42
+221            android:theme="@style/Theme.PlayCore.Transparent" />
+221-->[com.google.android.play:core-common:2.0.3] C:\Users\HARSHITA\.gradle\caches\transforms-4\147fd72ac180da34d50d4e48a1f9cfb7\transformed\core-common-2.0.3\AndroidManifest.xml:18:13-62
+222    </application>
+223
+224</manifest>

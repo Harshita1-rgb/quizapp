@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name" translatable="false">Quiz App</string>
+    <string name="correct_answer" translatable="false">Thats correct!</string>
+    <string name="g" translatable="false">Mercury is the closest planet to the Sun.</string>
+    <string name="gcm_defaultSenderId" translatable="false">337716895303</string>
+    <string name="google_api_key" translatable="false">AIzaSyD1LNg5-owXHK4dbJlJmV8ZLZ4abmc-VQQ</string>
+    <string name="google_app_id" translatable="false">1:337716895303:android:8998a9cb1b0319a1891b62</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyD1LNg5-owXHK4dbJlJmV8ZLZ4abmc-VQQ</string>
+    <string name="google_storage_bucket" translatable="false">quizapp1-d6eaf.firebasestorage.app</string>
+    <string name="h" translatable="false">Mars is known as the Red Planet.</string>
+    <string name="i" translatable="false">Jupiter is the largest planet in our solar system.</string>
+    <string name="j" translatable="false">The Moon is Earths natural satellite.</string>
+    <string name="k" translatable="false">The Milky Way is our galaxy.</string>
+    <string name="l" translatable="false">A solar eclipse occurs when the Earth blocks the Sun.</string>
+    <string name="next_button" translatable="false">Next</string>
+    <string name="previous_button" translatable="false">Previous</string>
+    <string name="project_id" translatable="false">quizapp1-d6eaf</string>
+    <string name="q1" translatable="false">Venus is the hottest planet in our solar system.</string>
+    <string name="q2" translatable="false">A day on Venus is longer than a year on Venus.</string>
+    <string name="q3" translatable="false">Neptune is the closest planet to the Sun.</string>
+    <string name="q4" translatable="false">The Great Wall of China is visible from the Moon.</string>
+    <string name="q5" translatable="false">Saturn is known for its stunning rings.</string>
+    <string name="q6" translatable="false">The Milky Way is a spiral galaxy.</string>
+    <string name="wrong_answer" translatable="false">Thats incorrect!</string>
+    <style name="Base.Theme.Quizapp" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme.Quizapp" parent="Base.Theme.Quizapp"/>
+</resources>
